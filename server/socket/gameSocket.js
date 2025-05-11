@@ -5,7 +5,7 @@ import { getGames, getPlayerPasswords } from '../controllers/gameController.js';
 export function setupSocket(server) {
   const io = new Server(server, {
     cors: {
-      origin: ["https://6-in-a-row-blitz-game-five.vercel.app/", "http://localhost:5173"],
+      origin: ["https://6-in-a-row-blitz-game-five.vercel.app", "http://localhost:5173"],
       methods: ['GET', 'POST']
     }
   });

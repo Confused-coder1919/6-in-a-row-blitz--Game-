@@ -2,7 +2,7 @@ import { io, Socket } from 'socket.io-client';
 import type { Game } from '../Types/GameTypes';
 
 // Initialize Socket.IO client
-const socket: Socket = io('http://localhost:3001');
+const socket: Socket = io('https://six-in-a-row-blitz-game-da5x.onrender.com');
 
 export const setupSocketListeners = (
   onConnect: () => void,

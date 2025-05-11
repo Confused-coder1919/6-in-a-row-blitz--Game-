@@ -5,7 +5,7 @@ import type { Game, PlayerCredentials } from './Types/GameTypes';
 import { setupSocketListeners, connectToGame, playMove, disconnectFromGame } from './socket/socketServices';
 
 // API base URL
-const API_URL = 'http://localhost:3001/api/games';
+const API_URL = 'https://six-in-a-row-blitz-game-da5x.onrender.com/api/games';
 
 function App() {
   const [connected, setConnected] = useState(false);
